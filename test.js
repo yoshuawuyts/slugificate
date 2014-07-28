@@ -13,12 +13,22 @@ var slugify = require('./index');
 
 describe('slugificate', function () {
   it('should catch errors', function () {
-    slugify.bind(null, 123).should.throw('Content should be a string');
-    slugify.bind(null, 'hello').should.not.throw('Content should be a string');
+    slugify.bind(null, 123)
+      .should.throw('Content should be a string');
+    slugify.bind(null, 'hi', 123)
+      .should.throw('Symbol should be a string');
+    slugify.bind(null, 'hello')
+      .should.not.throw('Content should be a string');
+    slugify.bind(null, 'hello', '-')
+      .should.not.throw('Symbol should be a string');
   });
-  it('should replace spaces with dashes', function () {
+  it('should replace spaces with dashes by default', function () {
     var someString = 'dogs are larger than cats';
     slugify(someString).should.eql('dogs-are-larger-than-cats');
+  });
+  it('should accept a \'symbol\' argument', function () {
+    var someString = 'dogs are larger than cats';
+    slugify(someString, '+').should.eql('dogs+are+larger+than+cats');
   });
   it('should lowercase letters', function () {
     var someString = 'Dogs are larger than Cats';

@@ -2,7 +2,8 @@
 [![NPM version][npm-image]][npm-url] [![build status][travis-image]][travis-url] 
 [![Test coverage][coveralls-image]][coveralls-url]
 
-Slugify a string, removing all non-word characters and replacing them with a dash.
+Slugify a string, removing all non-word characters and replacing them with a
+character. Defaults to a hypen (`'-'`), but any character can be used.
 
 ## Installation
 ```bash
@@ -16,7 +17,10 @@ var slugify = require('slugificate');
 var someString = 'Dogs are larger than Cats, sometimes';
 
 var newString = slugify(someString);
-//-> 'dogs-are-larger-than-cats-sometimes'
+//=> 'dogs-are-larger-than-cats-sometimes'
+
+var newerString = slugify(someString, '+');
+//=> 'dogs+are+larger+than+cats+sometimes'
 ```
 
 ## License
