@@ -1,7 +1,7 @@
 {
   "name": "slugificate",
   "version": "0.2.0",
-  "description": "",
+  "description": "Slugify a string with a character of choice",
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test ./node_modules/mocha/bin/mocha --recursive --harmony-generators -R spec",
