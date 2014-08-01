@@ -1,6 +1,6 @@
 {
   "name": "slugificate",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Slugify a string with a character of choice",
   "main": "index.js",
   "scripts": {
