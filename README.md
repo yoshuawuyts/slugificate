@@ -1,5 +1,5 @@
 # slugificate
-[![NPM version][npm-image]][npm-url] [![build status][travis-image]][travis-url] 
+[![NPM version][npm-image]][npm-url] [![build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 
 Slugify a string, removing all non-word characters and replacing them with a
@@ -26,9 +26,9 @@ var newerString = slugify(someString, '+');
 ## License
 [MIT](https://tldrlegal.com/license/mit-license) © [Yoshua Wuyts](yoshuawuyts.com)
 
-[npm-image]: https://img.shields.io/npm/v/slugificate.svg?style=flat
+[npm-image]: https://img.shields.io/npm/v/slugificate.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/slugificate
-[travis-image]: https://img.shields.io/travis/yoshuawuyts/slugificate.svg?style=flat
+[travis-image]: https://img.shields.io/travis/yoshuawuyts/slugificate.svg?style=flat-square
 [travis-url]: https://travis-ci.org/yoshuawuyts/slugificate
-[coveralls-image]: https://img.shields.io/coveralls/yoshuawuyts/slugificate.svg?style=flat
+[coveralls-image]: https://img.shields.io/coveralls/yoshuawuyts/slugificate.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/yoshuawuyts/slugificate?branch=master
