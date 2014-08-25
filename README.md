@@ -16,10 +16,10 @@ var slugify = require('slugificate');
 
 var someString = 'Dogs are larger than Cats, sometimes';
 
-var newString = slugify(someString);
+slugify(someString);
 //=> 'dogs-are-larger-than-cats-sometimes'
 
-var newerString = slugify(someString, '+');
+slugify(someString, '+');
 //=> 'dogs+are+larger+than+cats+sometimes'
 ```
 
